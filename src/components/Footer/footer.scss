@@ -1,10 +1,22 @@
 footer {
     height: 210px;
     margin-top: auto;
+    padding-bottom: 30px;
     background-color: #000000;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+
+    img {
+        width: 122px;
+    }
 
     p {
+        font-weight: 500;
+        font-size: 24px;
         text-align: center;
     }
 }
