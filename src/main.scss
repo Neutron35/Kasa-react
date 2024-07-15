@@ -1,6 +1,17 @@
+@font-face {
+    font-family: "Montserrat";
+    src:
+        local("Montserrat"),
+        url("./assets/Montserrat-VariableFont_wght.ttf") format("truetype"),
+        url("./assets/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat";
+}
 #root {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: Montserrat;
 }
