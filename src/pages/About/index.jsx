@@ -1,5 +1,12 @@
+import Banner from '../../components/Banner';
+import aboutPicture from '../../assets/aboutPicture.jpg';
+
 function About() {
-  return <div>Page à propos</div>;
+  return (
+    <main>
+      <Banner picture={aboutPicture} />
+    </main>
+  );
 }
 
 export default About;
