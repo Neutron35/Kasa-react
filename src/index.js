@@ -1,10 +1,10 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Navigate, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Lodging from './pages/Lodging';
 import About from './pages/About';
-import Error from './pages/Error';
+import NotFound from './pages/NotFound';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import './assets/Montserrat-VariableFont_wght.ttf';
@@ -19,9 +19,10 @@ root.render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/lodging" element={<Lodging />} />
+        <Route path="/lodging/:lodgingId" element={<Lodging />} />
         <Route path="/about" element={<About />} />
-        <Route path="*" element={<Error />} />
+        <Route path="notfound" element={<NotFound />} />
+        <Route path="*" element={<Navigate to="/notfound" replace />} />
       </Routes>
       <Footer />
     </Router>

@@ -1,4 +1,4 @@
-.error {
+.notfound {
     color: #FF6060;
     text-align: center;
 
@@ -6,17 +6,17 @@
         margin-bottom: 140px;
     }
 
-    .error__code {
+    .notfound__code {
         font-size: 288px;
         font-weight: 700;
     }
 
-    .error__details {
+    .notfound__details {
         font-size: 36px;
         font-weight: 500;
     }
 
-    .error__homelink {
+    .notfound__homelink {
         font-size: 18px;
         font-weight: 500;
         display: block;
