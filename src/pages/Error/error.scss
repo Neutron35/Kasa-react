@@ -1,0 +1,29 @@
+.error {
+    color: #FF6060;
+    text-align: center;
+
+    & > * {
+        margin-bottom: 140px;
+    }
+
+    .error__code {
+        font-size: 288px;
+        font-weight: 700;
+    }
+
+    .error__details {
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    .error__homelink {
+        font-size: 18px;
+        font-weight: 500;
+        display: block;
+        color: #000000;
+        text-decoration: underline;
+    }
+}
+
+
+
