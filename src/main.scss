@@ -10,8 +10,24 @@ body {
     margin: 0;
     font-family: "Montserrat";
 }
+
 #root {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+main {
+    margin: 0 100px;
+}
+
+p {
+    margin: 0;
+}
+
+a,
+a:focus,
+a:active {
+    color: inherit;
+    text-decoration: none;
 }

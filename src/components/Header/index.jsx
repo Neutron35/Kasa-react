@@ -6,11 +6,11 @@ function Header() {
   return (
     <header>
       <img src={logo} alt="Kasa" />
-      <nav>
-        <NavLink to="/" activeclassname="active">
+      <nav className="navbar">
+        <NavLink to="/" activeclassname="active" className="navbar__link">
           Accueil
         </NavLink>
-        <NavLink to="/about" activeclassname="active">
+        <NavLink to="/about" activeclassname="active" className="navbar__link">
           A propos
         </NavLink>
       </nav>

@@ -4,18 +4,13 @@ header {
     align-items: center;
     margin: 45px 100px 50px 100px;
 
-    nav {
+    .navbar {
         display: flex;
         gap: 57px;
         font-size: 24px;
         font-weight: 500;
-        a,
-        a:focus,
-        a:active {
-            color: inherit;
-            text-decoration: none;
-        }
-        .active {
+        
+        .navbar__link.active {
             text-decoration: underline;
         }
     }

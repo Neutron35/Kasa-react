@@ -1,4 +1,4 @@
-footer {
+.footer {
     height: 210px;
     margin-top: auto;
     padding-bottom: 30px;
@@ -10,11 +10,11 @@ footer {
     align-items: center;
     gap: 30px;
 
-    img {
+    .footer__logo {
         width: 122px;
     }
 
-    p {
+    .footer__copyright {
         font-weight: 500;
         font-size: 24px;
         text-align: center;

@@ -2,9 +2,9 @@ import './card.scss';
 
 function Card({ title, cover }) {
   return (
-    <figure>
-      <img src={cover} alt={title}></img>
-      <figcaption>{title}</figcaption>
+    <figure className="card">
+      <img src={cover} alt={title} className="card__cover"></img>
+      <figcaption className="card__title">{title}</figcaption>
     </figure>
   );
 }

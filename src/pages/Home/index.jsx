@@ -8,7 +8,7 @@ function Home() {
   return (
     <main>
       <Banner picture={homePicture} text={'Chez vous, partout et ailleurs'} />
-      <section id="gallery">
+      <section className="gallery">
         {backendData.map((data) => (
           <Card key={data.id} title={data.title} cover={data.cover} />
         ))}

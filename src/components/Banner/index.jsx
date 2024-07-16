@@ -2,9 +2,13 @@ import './banner.scss';
 
 function Banner({ picture, text }) {
   return (
-    <section id="banner">
-      <img src={picture} alt="" className={text ? 'homePicture' : 'aboutPicture'} />
-      <div>{text}</div>
+    <section className="banner">
+      <img
+        src={picture}
+        alt=""
+        className={`banner__picture ${text ? 'banner__picture--home' : 'banner__picture--about'}`}
+      />
+      <div className="banner__text">{text}</div>
     </section>
   );
 }
