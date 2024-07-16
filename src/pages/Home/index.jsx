@@ -1,7 +1,7 @@
-import datas from '../../assets/data.json';
+import backendData from '../../assets/backend-data.json';
 import homePicture from '../../assets/homePicture.jpg';
 import Banner from '../../components/Banner';
-import Thumbnail from '../../components/Thumbnail';
+import Card from '../../components/Card';
 import './home.scss';
 
 function Home() {
@@ -9,8 +9,8 @@ function Home() {
     <main>
       <Banner picture={homePicture} text={'Chez vous, partout et ailleurs'} />
       <section id="gallery">
-        {datas.map((data) => (
-          <Thumbnail key={data.id} title={data.title} cover={data.cover} />
+        {backendData.map((data) => (
+          <Card key={data.id} title={data.title} cover={data.cover} />
         ))}
       </section>
     </main>
