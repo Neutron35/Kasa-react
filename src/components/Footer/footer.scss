@@ -1,9 +1,11 @@
+@use '../../variables';
+
 .footer {
     height: 210px;
     margin-top: auto;
     padding-bottom: 30px;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: variables.$color-black;
+    color: variables.$contrast-font;
     display: flex;
     flex-direction: column;
     justify-content: end;

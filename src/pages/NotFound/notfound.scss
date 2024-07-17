@@ -1,5 +1,7 @@
+@use '../../variables';
+
 .notfound {
-    color: #FF6060;
+    color: variables.$color-red;
     text-align: center;
 
     & > * {
@@ -20,7 +22,7 @@
         font-size: 18px;
         font-weight: 500;
         display: block;
-        color: #000000;
+        color: variables.$color-black;
         text-decoration: underline;
     }
 }

@@ -1,11 +1,13 @@
+@use '../../variables';
+
 .collapse {
     overflow: hidden;
     
     .collapse__title {
         font-weight: 700;
         font-size: 24px;
-        color: #FFFFFF;
-        background-color: #FF6060;
+        color: variables.$contrast-font;
+        background-color: variables.$color-red;
         padding: 10px 20px 10px 15px;
         display: flex;
         justify-content: space-between;
@@ -24,7 +26,7 @@
         position: relative;
         font-size: 18px;
         font-weight: 400;
-        background-color: #F6F6F6;
+        background-color: variables.$contrast-background;
         padding: 15px 20px 20px 20px;
         border-radius: 0 0 5px 5px;
         z-index: -1;
