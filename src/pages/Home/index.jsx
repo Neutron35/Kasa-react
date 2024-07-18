@@ -7,7 +7,7 @@ import './home.scss';
 function Home() {
   return (
     <main>
-      <Banner picture={homePicture} text={'Chez vous, partout et ailleurs'} />
+      <Banner picture={homePicture} text="Chez vous, partout et ailleurs" />
       <section className="gallery">
         {backendData.map((data) => (
           <Card key={data.id} data={data} />
