@@ -1,0 +1,9 @@
+.host__rating {
+    display: flex;
+    column-gap: 15px;
+
+    .rating__star {
+        width: 24px;
+    }
+}
+
