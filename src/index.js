@@ -7,7 +7,7 @@ import About from './pages/About';
 import NotFound from './pages/NotFound';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import './assets/Montserrat-VariableFont_wght.ttf';
+import '@fontsource-variable/montserrat';
 import './main.scss';
 
 const domNode = document.getElementById('root');

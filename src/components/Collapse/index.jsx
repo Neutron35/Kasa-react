@@ -1,6 +1,6 @@
 import './collapse.scss';
 import { useState } from 'react';
-import arrowIcon from '../../assets/arrow-back-ios.svg';
+import arrowIcon from '../../assets/arrow-back-ios-up.svg';
 
 function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
