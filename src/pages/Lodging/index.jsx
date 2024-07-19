@@ -25,7 +25,7 @@ function Lodging() {
     const lodgingData = backendData.find((data) => data.id === lodgingId);
 
     return (
-      <main>
+      <main className="lodging">
         <Slideshow pictures={lodgingData.pictures} />
         <figcaption>
           <div className="lodging__info">
