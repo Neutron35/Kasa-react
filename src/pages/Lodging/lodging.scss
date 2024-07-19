@@ -37,6 +37,7 @@ figcaption {
 
         .host__identity {
             display: flex;
+            justify-content: end;
             align-items: center;
             gap: 10px;
             margin-bottom: 20px;
@@ -45,7 +46,7 @@ figcaption {
                 font-weight: 500;
                 font-size: 18px;
                 color: variables.$color-red;
-                height: fit-content;
+                width: min-content;
             }
     
             .host__picture {
