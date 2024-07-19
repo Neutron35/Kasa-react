@@ -17,13 +17,15 @@ root.render(
   <React.StrictMode>
     <Router>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/lodging/:lodgingId" element={<Lodging />} />
-        <Route path="/about" element={<About />} />
-        <Route path="notfound" element={<NotFound />} />
-        <Route path="*" element={<Navigate to="/notfound" replace />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/lodging/:lodgingId" element={<Lodging />} />
+          <Route path="/about" element={<About />} />
+          <Route path="notfound" element={<NotFound />} />
+          <Route path="*" element={<Navigate to="/notfound" replace />} />
+        </Routes>
+      </main>
       <Footer />
     </Router>
   </React.StrictMode>
