@@ -1,7 +1,6 @@
 @use '../../variables';
 
 .footer {
-    height: 210px;
     margin-top: auto;
     padding-bottom: 30px;
     background-color: variables.$color-black;
@@ -14,6 +13,7 @@
 
     .footer__logo {
         width: 122px;
+        margin-top: 65px;
     }
 
     .footer__copyright {

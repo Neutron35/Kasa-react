@@ -4,7 +4,7 @@ figcaption {
     display: flex;
     flex-wrap: wrap;
     row-gap: 25px;
-    margin-top: 30px;
+    margin: 30px 0 50px 0;
     
     .lodging__info {
         width: fit-content;
@@ -52,6 +52,20 @@ figcaption {
             .host__picture {
                 width: 64px;
                 border-radius: 50%;
+            }
+        }
+    }
+
+    .collapses {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .collapse {
+            flex-basis: 45%;
+
+            .collapse__title {
+                font-size: 18px;
             }
         }
     }
