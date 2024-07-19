@@ -6,14 +6,14 @@ import './home.scss';
 
 function Home() {
   return (
-    <main>
+    <div className="home">
       <Banner picture={homePicture} text="Chez vous, partout et ailleurs" />
       <section className="gallery">
         {backendData.map((data) => (
           <Card key={data.id} data={data} />
         ))}
       </section>
-    </main>
+    </div>
   );
 }
 

@@ -27,14 +27,14 @@ function About() {
     },
   ];
   return (
-    <main>
+    <div className="about">
       <Banner picture={aboutPicture} />
       <section id="corporate-values">
         {corporateValues.map((value, index) => (
           <Collapse key={index} title={value.title} content={value.content} />
         ))}
       </section>
-    </main>
+    </div>
   );
 }
 

@@ -25,7 +25,7 @@ function Lodging() {
     const lodgingData = backendData.find((data) => data.id === lodgingId);
 
     return (
-      <main className="lodging">
+      <div className="lodging">
         <Slideshow pictures={lodgingData.pictures} />
         <figcaption>
           <div className="lodging__info">
@@ -49,7 +49,7 @@ function Lodging() {
             <Collapse title="Équipements" content={lodgingData.equipments} />
           </div>
         </figcaption>
-      </main>
+      </div>
     );
   }
 }
