@@ -10,7 +10,7 @@ function Collapse({ title, content }) {
         <span>{title}</span>
         <img src={arrowIcon} className="arrow-icon open" alt="" onClick={() => setIsOpen(false)}></img>
       </div>
-      <div className="collapse__content collapse__content--opened">
+      <div className="collapse__content collapse__content--open">
         <p>{content}</p>
       </div>
     </div>
