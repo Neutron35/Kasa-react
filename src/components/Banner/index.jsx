@@ -6,7 +6,7 @@ function Banner({ picture, text }) {
       <img
         src={picture}
         alt=""
-        className={`banner__picture ${text ? 'banner__picture--home' : 'banner__picture--about'}`}
+        className={`banner__picture ${text ? 'banner__picture--text' : 'banner__picture--notext'}`}
       />
       <div className="banner__text">{text}</div>
     </section>

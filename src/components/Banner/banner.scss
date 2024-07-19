@@ -15,11 +15,11 @@
         object-fit: cover;
         border-radius: 25px;
 
-        &.banner__picture--home {
+        &.banner__picture--text {
             filter: brightness(40%);
         }
 
-        &.banner__picture--about {
+        &.banner__picture--notext {
             filter: brightness(70%);
         }
     }
