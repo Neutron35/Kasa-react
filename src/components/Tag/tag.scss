@@ -7,4 +7,11 @@
     background-color: variables.$color-red;
     padding: 5px 20px 5px 20px;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    @media (max-width: variables.$first-breakpoint) {
+        font-size: 10px;
+    }
 }

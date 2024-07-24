@@ -1,9 +1,19 @@
+@use '../../variables';
+
 .host__rating {
     display: flex;
     column-gap: 15px;
 
+    @media (max-width: variables.$first-breakpoint) {
+        column-gap: 7px;
+    }
+
     .rating__star {
         width: 24px;
+
+        @media (max-width: variables.$first-breakpoint) {
+            width: 13px;
+        }
     }
 }
 

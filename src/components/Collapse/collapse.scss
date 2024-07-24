@@ -2,19 +2,45 @@
 
 .collapse {
     overflow: hidden;
+    border-radius: 5px;
+
+    &.collapse--lodging {
+        flex-basis: 45%;
+
+        @media (max-width: variables.$first-breakpoint) {
+            flex-basis: 100%;
+        }
+    }
     
     .collapse__title {
         font-weight: 700;
         font-size: 24px;
         color: variables.$contrast-font;
         background-color: variables.$color-red;
-        padding: 10px 20px 10px 15px;
+        padding: 10px 15px 10px 15px;
         display: flex;
         justify-content: space-between;
         border-radius: 5px;
 
+        @media (max-width: variables.$first-breakpoint) {
+            font-size: 13px;
+            padding: 10px;
+        }
+
+        &.collapse__title--lodging {
+            font-size: 18px;
+
+            @media (max-width: variables.$first-breakpoint) {
+                font-size: 13px;
+            }
+        }
+
         .arrow-icon {
             transition: transform 500ms;
+
+            @media (max-width: variables.$first-breakpoint) {
+                width: 16px;
+            }
         
             &.open {
             transform: rotate(-180deg);
@@ -31,6 +57,10 @@
         border-radius: 0 0 5px 5px;
         z-index: -1;
         transition: all 500ms;
+
+        @media (max-width: variables.$first-breakpoint) {
+            font-size: 12px;
+        }
     
         &.collapse__content--closed {
             transform: translateY(-150px);

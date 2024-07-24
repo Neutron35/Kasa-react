@@ -3,19 +3,33 @@
 .notfound {
     color: variables.$color-red;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 140px;
+    margin-top: 90px;
+    margin-bottom: 140px;
 
-    & > * {
-        margin-bottom: 140px;
+    @media (max-width: variables.$first-breakpoint) {
+        row-gap: 115px;
+        margin-bottom: 115px;
     }
 
     .notfound__code {
         font-size: 288px;
         font-weight: 700;
+
+        @media (max-width: variables.$first-breakpoint) {
+            font-size: 96px;
+        }
     }
 
     .notfound__details {
         font-size: 36px;
         font-weight: 500;
+
+        @media (max-width: variables.$first-breakpoint) {
+            font-size: 18px;
+        }
     }
 
     .notfound__homelink {
@@ -24,6 +38,10 @@
         display: block;
         color: variables.$color-black;
         text-decoration: underline;
+
+        @media (max-width: variables.$first-breakpoint) {
+            font-size: 14px;
+        }
     }
 }
 
