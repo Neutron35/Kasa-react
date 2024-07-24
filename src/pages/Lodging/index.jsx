@@ -45,8 +45,8 @@ function Lodging() {
             <Rating rate={lodgingData.rating} />
           </div>
           <div className="collapses">
-            <Collapse title="Description" content={lodgingData.description} page="lodging" />
-            <Collapse title="Équipements" content={lodgingData.equipments} page="lodging" />
+            <Collapse title="Description" content={lodgingData.description} />
+            <Collapse title="Équipements" content={lodgingData.equipments} />
           </div>
         </figcaption>
       </div>

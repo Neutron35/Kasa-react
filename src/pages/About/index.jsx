@@ -31,7 +31,7 @@ function About() {
       <Banner picture={aboutPicture} />
       <section id="corporate-values">
         {corporateValues.map((value, index) => (
-          <Collapse key={index} title={value.title} content={value.content} page="about" />
+          <Collapse key={index} title={value.title} content={value.content} />
         ))}
       </section>
     </div>

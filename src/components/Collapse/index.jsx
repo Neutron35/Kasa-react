@@ -2,12 +2,12 @@ import './collapse.scss';
 import { useState } from 'react';
 import arrowIcon from '../../assets/arrow-back-ios-up.svg';
 
-function Collapse({ title, content, page }) {
+function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
   const isContentArray = Array.isArray(content);
   return isOpen ? (
-    <div className={`collapse collapse--${page}`}>
-      <div className={`collapse__title collapse__title--${page}`}>
+    <div className="collapse">
+      <div className="collapse__title">
         <span>{title}</span>
         <img src={arrowIcon} className="arrow-icon open" alt="" onClick={() => setIsOpen(false)}></img>
       </div>
@@ -16,8 +16,8 @@ function Collapse({ title, content, page }) {
       </div>
     </div>
   ) : (
-    <div className={`collapse collapse--${page}`}>
-      <div className={`collapse__title collapse__title--${page}`}>
+    <div className="collapse">
+      <div className="collapse__title">
         <span>{title}</span>
         <img src={arrowIcon} className="arrow-icon" alt="" onClick={() => setIsOpen(true)}></img>
       </div>

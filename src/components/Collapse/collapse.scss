@@ -3,14 +3,6 @@
 .collapse {
     overflow: hidden;
     border-radius: 5px;
-
-    &.collapse--lodging {
-        flex-basis: 45%;
-
-        @media (max-width: variables.$first-breakpoint) {
-            flex-basis: 100%;
-        }
-    }
     
     .collapse__title {
         font-weight: 700;
@@ -25,14 +17,6 @@
         @media (max-width: variables.$first-breakpoint) {
             font-size: 13px;
             padding: 10px;
-        }
-
-        &.collapse__title--lodging {
-            font-size: 18px;
-
-            @media (max-width: variables.$first-breakpoint) {
-                font-size: 13px;
-            }
         }
 
         .arrow-icon {
