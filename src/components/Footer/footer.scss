@@ -20,8 +20,24 @@
         font-weight: 500;
         font-size: 24px;
         text-align: center;
+    }
+}
 
-        @media (max-width: variables.$first-breakpoint) {
+@media (max-width: variables.$tablet) {
+    .footer {
+        gap: 22px;
+
+        .footer__copyright {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: variables.$mobile) {
+    .footer {
+        gap: 15px;
+
+        .footer__copyright {
             width: 27%;
             font-size: 12px;
             white-space: break-spaces;

@@ -12,6 +12,7 @@ function Home() {
         {backendData.map((data) => (
           <Card key={data.id} data={data} />
         ))}
+        <div className="gallery__lastrow"></div>
       </section>
     </div>
   );

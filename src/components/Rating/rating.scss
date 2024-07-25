@@ -4,14 +4,26 @@
     display: flex;
     column-gap: 15px;
 
-    @media (max-width: variables.$first-breakpoint) {
-        column-gap: 7px;
-    }
-
     .rating__star {
         width: 24px;
+    }
+}
 
-        @media (max-width: variables.$first-breakpoint) {
+@media (max-width: variables.$tablet) {
+    .host__rating {
+        column-gap: 11px;
+
+        .rating__star {
+            width: 19px;
+        }
+    }
+}
+
+@media (max-width: variables.$mobile) {
+    .host__rating {
+        column-gap: 7px;
+
+        .rating__star {
             width: 13px;
         }
     }

@@ -5,42 +5,62 @@ header {
     justify-content: space-between;
     align-items: center;
     max-width: 1240px;
-    min-width: 335px;
     width: 87%;
     padding: 45px 0 50px 0;
     margin: 0 auto 0 auto;
 
-    @media (max-width: variables.$first-breakpoint) {
-        padding: 20px 0 25px 0;
-    }
-
     .header__logo {
-
-        @media (max-width: variables.$first-breakpoint) {
-            width: 145px;
-        }
+        width: 210px;
     }
 
     .navbar {
         font-size: 24px;
         font-weight: 500;
 
-        @media (max-width: variables.$first-breakpoint) {
-            font-size: 12px;
-            text-transform: uppercase;
-        }
-
         ul {
             display: flex;
             gap: 55px;
-
-            @media (max-width: variables.$first-breakpoint) {
-                gap: 25px;
-            }
         }
         
         .navbar__link.active {
             text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: variables.$tablet) {
+    header {
+        padding: 30px 0 35px 0;
+
+        .header__logo {
+            width: 175px;
+        }
+
+        .navbar {
+            font-size: 18px;
+
+            ul {
+                gap: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: variables.$mobile) {
+    header {
+        padding: 20px 0 25px 0;
+
+        .header__logo {
+            width: 145px;
+        }
+
+        .navbar {
+            font-size: 12px;
+            text-transform: uppercase;
+
+            ul {
+                gap: 25px;
+            }
         }
     }
 }

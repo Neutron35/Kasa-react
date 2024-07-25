@@ -10,8 +10,16 @@
     display: flex;
     align-items: center;
     text-align: center;
+}
 
-    @media (max-width: variables.$first-breakpoint) {
+@media (max-width: variables.$tablet) {
+    .lodging__tag {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: variables.$mobile) {
+    .lodging__tag {
         font-size: 10px;
     }
 }

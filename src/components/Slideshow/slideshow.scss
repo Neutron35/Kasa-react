@@ -5,23 +5,11 @@
     height: 416px;
     margin: 0;
 
-    @media (max-width: variables.$first-breakpoint) {
-        height: 255px;
-    }
-
-    .hidden {
-        display: none;
-    }
-
     .slideshow__picture {
         object-fit: cover;
         width: 100%;
         height: 100%;
         border-radius: 25px;
-
-        @media (max-width: variables.$first-breakpoint) {
-            border-radius: 10px;
-        }
     }
 
     .slideshow__navigation {
@@ -31,10 +19,6 @@
         border: 0;
         padding: 0;
         background-color: transparent;
-
-        @media (max-width: variables.$first-breakpoint) {
-            bottom: 115px;
-        }
 
         &.slideshow__navigation--prev {
             left: 0px;
@@ -46,21 +30,65 @@
 
         .slideshow__icon {
             margin: 20px;
-
-            @media (max-width: variables.$first-breakpoint) {
-                margin: 5px;
-                height: 20px;
-            }
+            height: 81px;
         }
     }
 
     .slideshow__numbering {
+        width: 100%;
         position: absolute;
-        left: 608px;
         bottom: 25px;
         font-weight: 500;
         font-size: 18px;
         color: variables.$contrast-font;
         text-align: center;
+    }
+}
+
+@media (max-width: variables.$tablet) {
+    .slideshow {
+        height: 335px;
+
+        .slideshow__picture {
+            border-radius: 17px;
+        }
+
+        .slideshow__navigation {
+            bottom: 130px;
+
+            .slideshow__icon {
+                margin: 12px;
+                height: 50px;
+            }
+        }
+
+        .slideshow__numbering {
+            bottom: 20px;
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: variables.$mobile) {
+    .slideshow {
+        height: 255px;
+
+        .slideshow__picture {
+            border-radius: 10px;
+        }
+
+        .slideshow__navigation {
+            bottom: 115px;
+
+            .slideshow__icon {
+                margin: 5px;
+                height: 20px;
+            }
+        }
+
+        .slideshow__numbering {
+            bottom: 15px;
+            font-size: 14px;
+        }
     }
 }

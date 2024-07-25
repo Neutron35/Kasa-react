@@ -14,17 +14,9 @@
         justify-content: space-between;
         border-radius: 5px;
 
-        @media (max-width: variables.$first-breakpoint) {
-            font-size: 13px;
-            padding: 10px;
-        }
-
         .arrow-icon {
+            width: 25px;
             transition: transform 500ms;
-
-            @media (max-width: variables.$first-breakpoint) {
-                width: 16px;
-            }
         
             &.open {
             transform: rotate(-180deg);
@@ -41,16 +33,47 @@
         border-radius: 0 0 5px 5px;
         z-index: -1;
         transition: all 500ms;
-
-        @media (max-width: variables.$first-breakpoint) {
-            font-size: 12px;
-        }
     
         &.collapse__content--closed {
             transform: translateY(-150px);
             padding-top: 0;
             padding-bottom: 0;
             max-height: 0;
+        }
+    }
+}
+
+@media (max-width: variables.$tablet) {
+    .collapse {
+
+        .collapse__title {
+            font-size: 18px;
+            
+            .arrow-icon {
+                width: 20px;
+            }
+        }
+
+        .collapse__content {
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: variables.$mobile) {
+    .collapse {
+
+        .collapse__title {
+            font-size: 13px;
+            padding: 10px;
+            
+            .arrow-icon {
+                width: 16px;
+            }
+        }
+
+        .collapse__content {
+            font-size: 12px;
         }
     }
 }
