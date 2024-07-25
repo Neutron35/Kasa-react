@@ -12,18 +12,18 @@ function Lodging() {
   const navigate = useNavigate();
   const [idFound, setIdFound] = useState(false);
 
+  const lodgingData = backendData.find((data) => data.id === lodgingId);
+
   useEffect(() => {
-    if (backendData.some((data) => data.id === lodgingId)) {
+    if (lodgingData !== undefined) {
       setIdFound(true);
     } else {
       setIdFound(false);
       navigate('/notfound', { replace: true });
     }
-  }, [lodgingId, idFound, navigate]);
+  }, [lodgingData, idFound, navigate]);
 
   if (idFound) {
-    const lodgingData = backendData.find((data) => data.id === lodgingId);
-
     return (
       <div className="lodging">
         <Slideshow pictures={lodgingData.pictures} />

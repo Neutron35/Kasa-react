@@ -17,22 +17,18 @@ function Slideshow(props) {
 
   return (
     <figure className="slideshow">
-      <button
-        onClick={prevPicture}
-        className={`slideshow__navigation slideshow__navigation--prev ${pictures.length < 2 ? 'hidden' : ''}`}
-      >
-        <img src={arrowBackIcon} alt="" className="slideshow__icon"></img>
-      </button>
+      {pictures.length > 2 && (
+        <div>
+          <button onClick={prevPicture} className={`slideshow__navigation slideshow__navigation--prev`}>
+            <img src={arrowBackIcon} alt="" className="slideshow__icon"></img>
+          </button>
+          <p className={`slideshow__numbering`}>{`${activeIndex + 1}/${pictures.length}`}</p>
+          <button onClick={nextPicture} className={`slideshow__navigation slideshow__navigation--next`}>
+            <img src={arrowForwardIcon} alt="" className="slideshow__icon"></img>
+          </button>
+        </div>
+      )}
       <img src={pictures[activeIndex]} alt="" className="slideshow__picture"></img>
-      <p className={`slideshow__numbering ${pictures.length < 2 ? 'hidden' : ''}`}>{`${activeIndex + 1}/${
-        pictures.length
-      }`}</p>
-      <button
-        onClick={nextPicture}
-        className={`slideshow__navigation slideshow__navigation--next ${pictures.length < 2 ? 'hidden' : ''}`}
-      >
-        <img src={arrowForwardIcon} alt="" className="slideshow__icon"></img>
-      </button>
     </figure>
   );
 }
