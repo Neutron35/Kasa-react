@@ -17,38 +17,37 @@
         .arrow-icon {
             width: 25px;
             transition: transform 500ms;
-        
+
             &.open {
-            transform: rotate(-180deg);
+                transform: rotate(-180deg);
             }
         }
     }
     
     .collapse__content {
         position: relative;
+        z-index: -1;
+        padding: 15px 20px 20px 20px;
+        transition: all 500ms;
+        background-color: variables.$contrast-background;
+        border-radius: 0 0 5px 5px;
         font-size: 18px;
         font-weight: 400;
-        background-color: variables.$contrast-background;
-        padding: 15px 20px 20px 20px;
-        border-radius: 0 0 5px 5px;
-        z-index: -1;
-        transition: all 500ms;
-    
+
         &.collapse__content--closed {
             transform: translateY(-150px);
+            max-height: 0;
             padding-top: 0;
             padding-bottom: 0;
-            max-height: 0;
         }
     }
 }
 
 @media (max-width: variables.$tablet) {
     .collapse {
-
         .collapse__title {
             font-size: 18px;
-            
+
             .arrow-icon {
                 width: 20px;
             }
@@ -62,10 +61,9 @@
 
 @media (max-width: variables.$mobile) {
     .collapse {
-
         .collapse__title {
-            font-size: 13px;
             padding: 10px;
+            font-size: 13px;
             
             .arrow-icon {
                 width: 16px;

@@ -17,8 +17,8 @@
     }
 
     .footer__copyright {
-        font-weight: 500;
         font-size: 24px;
+        font-weight: 500;
         text-align: center;
     }
 }
@@ -36,7 +36,7 @@
 @media (max-width: variables.$mobile) {
     .footer {
         gap: 15px;
-
+        
         .footer__copyright {
             width: 27%;
             font-size: 12px;

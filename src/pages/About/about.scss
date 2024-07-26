@@ -17,8 +17,8 @@
 
 @media (max-width: variables.$mobile) {
     #corporate-values {
+        gap: 20px;
         width: 100%;
         margin: 20px 0;
-        gap: 20px;
     }
 }

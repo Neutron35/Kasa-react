@@ -24,9 +24,9 @@
     }
 
     .notfound__homelink {
+        display: block;
         font-size: 18px;
         font-weight: 500;
-        display: block;
         color: variables.$color-black;
         text-decoration: underline;
     }
@@ -62,7 +62,7 @@
 
         .notfound__details {
             font-size: 18px;
-
+            
             br {
                 display: initial;
             }
