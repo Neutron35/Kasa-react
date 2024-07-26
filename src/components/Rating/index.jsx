@@ -1,4 +1,5 @@
 import './rating.scss';
+import PropTypes from 'prop-types';
 import starActive from '../../assets/star-active.svg';
 import starInactive from '../../assets/star-inactive.svg';
 
@@ -22,5 +23,9 @@ function Rating({ rate }) {
     </div>
   );
 }
+
+Rating.propTypes = {
+  rate: PropTypes.string.isRequired,
+};
 
 export default Rating;

@@ -1,4 +1,5 @@
 import './collapse.scss';
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import arrowIcon from '../../assets/arrow-back-ios-up.svg';
 
@@ -23,5 +24,10 @@ function Collapse({ title, content }) {
     </div>
   );
 }
+
+Collapse.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,
+};
 
 export default Collapse;

@@ -1,4 +1,5 @@
 import './slideshow.scss';
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import arrowBackIcon from '../../assets/arrow-back-ios-left.svg';
 import arrowForwardIcon from '../../assets/arrow-forward-ios.svg';
@@ -32,5 +33,9 @@ function Slideshow(props) {
     </figure>
   );
 }
+
+Slideshow.propTypes = {
+  props: PropTypes.array.isRequired,
+};
 
 export default Slideshow;

@@ -1,4 +1,5 @@
 import './banner.scss';
+import PropTypes from 'prop-types';
 
 function Banner({ picture, text }) {
   return (
@@ -12,5 +13,10 @@ function Banner({ picture, text }) {
     </section>
   );
 }
+
+Banner.propTypes = {
+  picture: PropTypes.string.isRequired,
+  text: PropTypes.string,
+};
 
 export default Banner;

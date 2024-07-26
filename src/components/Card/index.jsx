@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import './card.scss';
 
 function Card({ data }) {
@@ -11,5 +12,9 @@ function Card({ data }) {
     </Link>
   );
 }
+
+Card.propTypes = {
+  data: PropTypes.object.isRequired,
+};
 
 export default Card;
