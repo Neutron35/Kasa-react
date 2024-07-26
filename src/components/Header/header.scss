@@ -7,14 +7,14 @@ header {
     max-width: 1240px;
     width: 87%;
     padding: 45px 0 50px 0;
-    margin: 0 auto 0 auto;
+    margin: variables.$margin-auto;
 
     .header__logo {
         width: 210px;
     }
 
     .navbar {
-        font-size: 24px;
+        font-size: variables.$font-size-title;
         font-weight: 500;
 
         ul {
@@ -37,7 +37,7 @@ header {
         }
 
         .navbar {
-            font-size: 18px;
+            font-size: variables.$font-size-main;
 
             ul {
                 gap: 30px;

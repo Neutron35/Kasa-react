@@ -1,11 +1,23 @@
-$color-white: #FFFFFF;
-$color-red: #FF6060;
-$color-grey: #F6F6F6;
-$color-black: #000000;
-
-$contrast-font: $color-white;
-$contrast-background: $color-grey;
-
 $mobile-s: 575.98px;
 $mobile: 767.98px;
 $tablet: 1023.98px;
+
+$color-white: #fff;
+$color-black: #000;
+$color-highlight: #FF6060;
+$color-background: #F6F6F6;
+
+$border-radius-main: 25px;
+$border-radius-secondary: 10px;
+$border-radius-collapse: 5px;
+
+$font-size-main: 18px;
+$font-size-secondary: 14px;
+$font-size-title: 24px;
+
+$margin-auto: 0 auto;
+$padding-main: 10px 15px;
+$padding-secondary: 15px 20px 20px;
+
+$drop-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+$object-fit: cover;

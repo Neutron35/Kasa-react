@@ -5,12 +5,12 @@
     .gallery {
         margin: 50px auto;
         padding: 55px 50px;
-        background-color: variables.$contrast-background;
+        background-color: variables.$color-background;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         row-gap: 50px;
-        border-radius: 25px;
+        border-radius: variables.$border-radius-main;
 
         .gallery__lastrow {
             width: 30%;

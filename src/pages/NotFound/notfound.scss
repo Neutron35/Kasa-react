@@ -1,7 +1,7 @@
 @use '../../variables';
 
 .notfound {
-    color: variables.$color-red;
+    color: variables.$color-highlight;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@
 
     .notfound__homelink {
         display: block;
-        font-size: 18px;
+        font-size: variables.$font-size-main;
         font-weight: 500;
         color: variables.$color-black;
         text-decoration: underline;
@@ -61,7 +61,7 @@
         }
 
         .notfound__details {
-            font-size: 18px;
+            font-size: variables.$font-size-main;
             
             br {
                 display: initial;
@@ -69,7 +69,7 @@
         }
 
         .notfound__homelink {
-            font-size: 14px;
+            font-size: variables.$font-size-secondary;
         }
     }
 }

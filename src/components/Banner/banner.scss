@@ -5,15 +5,15 @@
     height: 225px;
     position: relative;
     text-align: center;
-    color: variables.$contrast-font;
-    border-radius: 25px;
-    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    color: variables.$color-white;
+    border-radius: variables.$border-radius-main;
+    filter: variables.$drop-shadow;
 
     .banner__picture {
         width: 100%;
         height: 100%;
-        object-fit: cover;
-        border-radius: 25px;
+        object-fit: variables.$object-fit;
+        border-radius: variables.$border-radius-main;
 
         &.banner__picture--text {
             filter: brightness(40%);
@@ -25,7 +25,7 @@
     }
 
     .banner__text {
-        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+        filter: variables.$drop-shadow;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -60,7 +60,7 @@
         }
 
         .banner__text {
-            font-size: 24px;
+            font-size: variables.$font-size-title;
         }
     }
 }

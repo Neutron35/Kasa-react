@@ -16,12 +16,12 @@
                 margin: 0;
                 font-size: 36px;
                 font-weight: 500;
-                color: variables.$color-red;
+                color: variables.$color-highlight;
             }
         
             .lodging__location {
                 margin: 0;
-                font-size: 18px;
+                font-size: variables.$font-size-main;
                 font-weight: 500;
             }
         
@@ -48,9 +48,9 @@
 
                 .host__name {
                     width: min-content;
-                    font-size: 18px;
+                    font-size: variables.$font-size-main;
                     font-weight: 500;
-                    color: variables.$color-red;
+                    color: variables.$color-highlight;
                 }
         
                 .host__picture {
@@ -70,7 +70,7 @@
                 flex-basis: 45%;
 
                 .collapse__title {
-                    font-size: 18px;
+                    font-size: variables.$font-size-main;
                 }
             }
         }
@@ -141,12 +141,12 @@
             
             .lodging__info {
                 .lodging__title {
-                    font-size: 18px;
+                    font-size: variables.$font-size-main;
                 }
 
                 .lodging__location {
                     margin-top: 5px;
-                    font-size: 14px;
+                    font-size: variables.$font-size-secondary;
                 }
 
                 .lodging__tags {

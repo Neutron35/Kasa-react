@@ -2,11 +2,11 @@
 
 .lodging__tag {
     font-weight: 700;
-    font-size: 14px;
-    color: variables.$contrast-font;
-    background-color: variables.$color-red;
-    padding: 5px 20px 5px 20px;
-    border-radius: 10px;
+    font-size: variables.$font-size-secondary;
+    color: variables.$color-white;
+    background-color: variables.$color-highlight;
+    padding: 5px 20px;
+    border-radius: variables.$border-radius-secondary;
     display: flex;
     align-items: center;
     text-align: center;

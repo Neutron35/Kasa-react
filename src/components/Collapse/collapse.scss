@@ -2,17 +2,17 @@
 
 .collapse {
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: variables.$border-radius-collapse;
     
     .collapse__title {
         font-weight: 700;
-        font-size: 24px;
-        color: variables.$contrast-font;
-        background-color: variables.$color-red;
-        padding: 10px 15px 10px 15px;
+        font-size: variables.$font-size-title;
+        color: variables.$color-white;
+        background-color: variables.$color-highlight;
+        padding: variables.$padding-main;
         display: flex;
         justify-content: space-between;
-        border-radius: 5px;
+        border-radius: variables.$border-radius-collapse;
 
         .arrow-icon {
             width: 25px;
@@ -27,11 +27,11 @@
     .collapse__content {
         position: relative;
         z-index: -1;
-        padding: 15px 20px 20px 20px;
+        padding: variables.$padding-secondary;
         transition: all 500ms;
-        background-color: variables.$contrast-background;
+        background-color: variables.$color-background;
         border-radius: 0 0 5px 5px;
-        font-size: 18px;
+        font-size: variables.$font-size-main;
         font-weight: 400;
 
         &.collapse__content--closed {
@@ -46,7 +46,7 @@
 @media (max-width: variables.$tablet) {
     .collapse {
         .collapse__title {
-            font-size: 18px;
+            font-size: variables.$font-size-main;
 
             .arrow-icon {
                 width: 20px;
