@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import backendData from '../../assets/backend-data.json';
-import Slideshow from '../../components/Slideshow';
 import Tag from '../../components/Tag';
-import Collapse from '../../components/Collapse';
-import './lodging.scss';
 import Rating from '../../components/Rating';
+import Collapse from '../../components/Collapse';
+import Slideshow from '../../components/Slideshow';
+import backendData from '../../assets/backend-data.json';
+import './lodging.scss';
 
 function Lodging() {
   const { lodgingId } = useParams();

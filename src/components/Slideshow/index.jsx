@@ -1,8 +1,8 @@
-import './slideshow.scss';
-import PropTypes from 'prop-types';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import arrowBackIcon from '../../assets/arrow-back-ios-left.svg';
 import arrowForwardIcon from '../../assets/arrow-forward-ios.svg';
+import './slideshow.scss';
 
 function Slideshow(props) {
   const pictures = props.pictures;

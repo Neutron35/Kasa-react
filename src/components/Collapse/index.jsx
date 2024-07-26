@@ -1,7 +1,7 @@
-import './collapse.scss';
-import PropTypes from 'prop-types';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import arrowIcon from '../../assets/arrow-back-ios-up.svg';
+import './collapse.scss';
 
 function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);

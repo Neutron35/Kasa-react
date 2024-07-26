@@ -1,7 +1,7 @@
-import './rating.scss';
 import PropTypes from 'prop-types';
 import starActive from '../../assets/star-active.svg';
 import starInactive from '../../assets/star-inactive.svg';
+import './rating.scss';
 
 function Rating({ rate }) {
   const stars = [];

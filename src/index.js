@@ -1,9 +1,9 @@
 import React from 'react';
+import { Navigate, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { createRoot } from 'react-dom/client';
-import { Navigate, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Lodging from './pages/Lodging';
 import About from './pages/About';
+import Lodging from './pages/Lodging';
 import NotFound from './pages/NotFound';
 import Header from './components/Header';
 import Footer from './components/Footer';
