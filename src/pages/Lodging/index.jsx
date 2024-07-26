@@ -40,7 +40,11 @@ function Lodging() {
           <div className="host__info">
             <div className="host__identity">
               <p className="host__name">{lodgingData.host.name}</p>
-              <img src={lodgingData.host.picture} alt="" className="host__picture"></img>
+              <img
+                src={lodgingData.host.picture}
+                alt={`Portrait de ${lodgingData.host.name}`}
+                className="host__picture"
+              ></img>
             </div>
             <Rating rate={lodgingData.rating} />
           </div>

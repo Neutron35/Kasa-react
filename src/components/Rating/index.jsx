@@ -18,7 +18,12 @@ function Rating({ rate }) {
   return (
     <div className="host__rating">
       {stars.map((star, index) => (
-        <img key={index} className="rating__star" src={`${star === 1 ? starActive : starInactive}`} alt=""></img>
+        <img
+          key={index}
+          className="rating__star"
+          src={`${star === 1 ? starActive : starInactive}`}
+          alt={star === 1 ? `Icone d'étoile pleine` : `Icone d'étoile vide`}
+        ></img>
       ))}
     </div>
   );

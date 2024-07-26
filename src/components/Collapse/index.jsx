@@ -14,7 +14,7 @@ function Collapse({ title, content }) {
         <img
           src={arrowIcon}
           className={`arrow-icon ${isOpen ? 'open' : ''}`}
-          alt=""
+          alt={isOpen ? 'Masquer les informations' : 'Afficher les informations'}
           onClick={() => setIsOpen(!isOpen)}
         ></img>
       </div>
