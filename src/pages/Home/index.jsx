@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import Card from '../../components/Card';
 import Banner from '../../components/Banner';
 import homePicture from '../../assets/homePicture.jpg';
@@ -6,10 +5,6 @@ import backendData from '../../assets/backend-data.json';
 import './home.scss';
 
 function Home() {
-  useEffect(() => {
-    document.title = `Kasa - Accueil`;
-  }, []);
-
   return (
     <div className="home">
       <Banner picture={homePicture} text="Chez vous, partout et ailleurs" />
@@ -17,6 +12,7 @@ function Home() {
         {backendData.map((data) => (
           <Card key={data.id} data={data} />
         ))}
+        <div className="gallery__lastrow"></div>
       </section>
     </div>
   );

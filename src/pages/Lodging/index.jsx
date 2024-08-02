@@ -23,10 +23,6 @@ function Lodging() {
     }
   }, [lodgingData, idFound, navigate]);
 
-  useEffect(() => {
-    document.title = `${lodgingData.title} - ${lodgingData.location}`;
-  }, [lodgingData]);
-
   if (idFound) {
     return (
       <div className="lodging">
