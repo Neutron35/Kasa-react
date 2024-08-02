@@ -1,7 +1,12 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './notfound.scss';
 
 function NotFound() {
+  useEffect(() => {
+    document.title = `Kasa - Page introuvable`;
+  }, []);
+
   return (
     <div className="notfound">
       <p className="notfound__code">404</p>
