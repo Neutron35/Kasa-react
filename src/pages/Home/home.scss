@@ -6,26 +6,19 @@
         margin: 50px auto;
         padding: 55px 50px;
         background-color: variables.$color-background;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
         justify-content: space-between;
+        justify-items: center;
         row-gap: 50px;
         border-radius: variables.$border-radius-main;
-
-        .gallery__lastrow {
-            width: 30%;
-            max-width: 340px;
-            height: 340px;
-        }
     }
 }
 
 @media (max-width: variables.$tablet) {
     .home {
         .gallery {
-            .gallery__lastrow {
-                display: none;
-            }
+            grid-template-columns: 43% 43%;
         }
     }
 }
@@ -35,6 +28,7 @@
         .gallery {
             justify-content: center;
             row-gap: 20px;
+            grid-template-columns: 100%;
             margin: 20px auto;
             padding: 0;
             background-color: transparent;
