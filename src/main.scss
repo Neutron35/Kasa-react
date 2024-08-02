@@ -1,3 +1,5 @@
+@use './variables';
+
 body {
     margin: 0;
     font-family: "Montserrat Variable", sans-serif;
@@ -31,5 +33,15 @@ body {
         margin: 0;
         padding: 0;
         list-style-type: none;
+    }
+}
+
+@media (max-width: variables.$mobile) {
+    body {
+        #root {
+            main {
+                width: 89%;
+            }
+        }
     }
 }
