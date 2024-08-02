@@ -22,7 +22,7 @@ root.render(
           <Route path="/" element={<Home />} />
           <Route path="/lodging/:lodgingId" element={<Lodging />} />
           <Route path="/about" element={<About />} />
-          <Route path="notfound" element={<NotFound />} />
+          <Route path="/notfound" element={<NotFound />} />
           <Route path="*" element={<Navigate to="/notfound" replace />} />
         </Routes>
       </main>
