@@ -4,8 +4,7 @@ import arrowBackIcon from '../../assets/arrow-back-ios-left.svg';
 import arrowForwardIcon from '../../assets/arrow-forward-ios.svg';
 import './slideshow.scss';
 
-function Slideshow(props) {
-  const pictures = props.pictures;
+function Slideshow({ pictures }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const nextPicture = () => {
@@ -35,7 +34,7 @@ function Slideshow(props) {
 }
 
 Slideshow.propTypes = {
-  props: PropTypes.array.isRequired,
+  pictures: PropTypes.array.isRequired,
 };
 
 export default Slideshow;
