@@ -17,6 +17,7 @@
         .arrow-icon {
             width: 25px;
             transition: transform 500ms;
+            cursor: pointer;
 
             &.open {
                 transform: rotate(-180deg);
