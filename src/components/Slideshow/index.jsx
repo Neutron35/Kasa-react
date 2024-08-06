@@ -17,7 +17,7 @@ function Slideshow({ pictures }) {
 
   return (
     <figure className="slideshow">
-      {pictures.length > 2 && (
+      {pictures.length > 1 && (
         <div>
           <button onClick={prevPicture} className={`slideshow__navigation slideshow__navigation--prev`}>
             <img src={arrowBackIcon} alt="Flèche pour image précédente" className="slideshow__icon"></img>
